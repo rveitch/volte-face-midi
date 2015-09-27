@@ -32,10 +32,6 @@ void setup()
 void loop()
 {
   // Read messages from the serial port using the main input channel.
-    // RETURNS: True if a valid message has been stored in the structure, false if not.
-    // A valid message is a message that matches the input channel.
-    // If the Thru is enabled and the message matches the filter, it is sent back on the MIDI output.
-    // Call MIDI.read the fastest you can for real-time performance.
   MIDI.read(); //is there incoming MIDI?
 }
 
