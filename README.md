@@ -19,14 +19,17 @@ MIDI_CREATE_DEFAULT_INSTANCE();
 void handleProgramChange(byte channel, byte number)
 {
   // Do this whenever a Program Change (0xC0) is recieved:
-  MIDI.sendControlChange(0, 0, 1); //Needed for Program Changes to work. (Because CC Bank MSB?) (Control Function: Bank Select, USED AS: MSB)
+    //Control Function: Bank Select, USED AS: MSB
+  MIDI.sendControlChange(0, 0, 1);
 }
 // ----------------------------------------------------------------------------------------------
 
 void setup()
 {
-  MIDI.handleProgramChange(handleProgramChange); // Connect the "handleNoteOn" FUNCTION to the library so it is called upon reception of a ProgramChange.
-  MIDI.begin(MIDI_CHANNEL_OMNI); // Initiate MIDI communications, listen to all channels
+  // Connect the "handleNoteOn" FUNCTION to the library so it is called upon reception of a ProgramChange.
+  MIDI.handleProgramChange(handleProgramChange);
+  // Initiate MIDI communications, listen to all channels
+  MIDI.begin(MIDI_CHANNEL_OMNI); 
 }
 
 void loop()
