@@ -11,7 +11,7 @@
 #include <MIDI.h>
 MIDI_CREATE_DEFAULT_INSTANCE();
 
-// ----------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------
 // Program Change Callback:
 // This function will be automatically called when a program change message (0xC0) has been received.
 void handleProgramChange(byte channel, byte number)
@@ -19,7 +19,7 @@ void handleProgramChange(byte channel, byte number)
   // Send Control Change - Bank Select MSB
   MIDI.sendControlChange(0, 0, 1); // Needed for Program Changes to work
 }
-// ----------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------
 
 void setup()
 {
