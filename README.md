@@ -5,6 +5,7 @@
 - [Midi Library Documentation](http://arduinomidilib.fortyseveneffects.com/index.html)
 - [Callbacks Documentation](http://playground.arduino.cc/Main/MIDILibraryCallbacks)
 - [EEPROM Read](https://www.arduino.cc/en/Tutorial/EEPROMRead)
+- [EEPROM Array Topic](http://forum.arduino.cc/index.php?topic=258457.0)
 
 ## Initial Example:
 
