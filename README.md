@@ -17,7 +17,7 @@ MIDI_CREATE_DEFAULT_INSTANCE();
 void handleProgramChange(byte channel, byte number)
 {
   // Send Control Change - Bank Select MSB
-  MIDI.sendControlChange(0, 0, 1); //Needed for Program Changes to work?
+  MIDI.sendControlChange(0, 0, 1); //Needed for Program Changes to work.
 }
 // ----------------------------------------------------------------------------------------------
 
