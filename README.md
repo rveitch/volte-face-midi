@@ -42,7 +42,9 @@ void loop()
 
 ## Signal Chain:
 
+```
 OneControl OC-10 Midi Out -> Arduino -> H9 -> Mobius -> Timeline -> BigSky -> CAB
+```
 
 ## Preset Data Structure
 Index = Incoming program change # & Array "Row" Index
