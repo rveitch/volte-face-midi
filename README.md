@@ -47,6 +47,8 @@ OneControl OC-10 Midi Out -> Arduino -> H9 -> Mobius -> Timeline -> BigSky -> CA
 ```
 
 ## Preset Data Structure
+
+```
 Index = Incoming program change # & Array "Row" Index
 Ch1-5 = Outgoing program change to send per midi channel (1-5 for five separate devices):
   Ch1 = Eventide H9
@@ -54,6 +56,7 @@ Ch1-5 = Outgoing program change to send per midi channel (1-5 for five separate 
   Ch3 = Strymon Timeline
   Ch4 = Strymon Bigsky
   Ch5 = TwoNotes CAB
+```  
 
 ```
 EEPROM Preset Data Arrays:
