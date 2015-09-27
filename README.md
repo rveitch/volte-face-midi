@@ -48,7 +48,6 @@ void loop()
      //static const bool UseRunningStatus = true;
      */
 
-/*!
 MIDI.begin();   // Launch MIDI with default options
 MIDI.read(); //is there incoming MIDI?
 getType(): returns the type of the message (valid types are decribed above)
@@ -69,6 +68,5 @@ send();
 setHandleProgramChange();
 setThruFilterMode();
 disconnectCallbackFromType();
-     */
      
 ```
