@@ -38,7 +38,7 @@ void loop()
 
 ```
 
-## Library Functions
+## Library Function Examples
 
 ```c
 
