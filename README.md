@@ -18,9 +18,9 @@ MIDI_CREATE_DEFAULT_INSTANCE();
 
 void handleProgramChange(byte channel, byte number)
 {
-  /// Do this whenever a Program Change (0xC0) is received:
-  //Control Function: Bank Select, Used As: MSB.
-  MIDI.sendControlChange(0, 0, 1); //Needed for Program Changes to work.
+  // Do this whenever a Program Change (0xC0) is received:
+    // Send Control Change - Bank Select MSB
+  MIDI.sendControlChange(0, 0, 1); //Needed for Program Changes to work?
 }
 // ----------------------------------------------------------------------------------------------
 
