@@ -5,7 +5,7 @@
 - [Midi Library Documentation](http://arduinomidilib.fortyseveneffects.com/index.html)
 - [Callbacks Documentation](http://playground.arduino.cc/Main/MIDILibraryCallbacks)
 - [EEPROM Read](https://www.arduino.cc/en/Tutorial/EEPROMRead)
-- [EEPROM Array Topic](http://forum.arduino.cc/index.php?topic=258457.0)
+- [Saving int arrays to EEPROM](http://forum.arduino.cc/index.php?topic=258193.0)
 
 ## Initial Example:
 
@@ -39,6 +39,34 @@ void loop()
 }
 
 ```
+
+## Signal Chain:
+
+OneControl OC-10 Midi Out -> Arduino -> H9 -> Mobius -> Timeline -> BigSky -> CAB
+
+## Preset Data Structure
+Index = Incoming program change # & Array "Row" Index
+Ch1-5 = Outgoing program change to send per midi channel (1-5 for five separate devices):
+  Ch1 = Eventide H9
+  Ch2 = Strymon Mobius
+  Ch3 = Strymon Timeline
+  Ch4 = Strymon Bigsky
+  Ch5 = TwoNotes CAB
+
+EEPROM Preset Data Arrays:
+Indx Ch1  Ch2  Ch3  Ch4  Ch5
+[00] [  ] [  ] [  ] [  ] [  ]
+[01] [  ] [  ] [  ] [  ] [  ]
+[02] [  ] [  ] [  ] [  ] [  ]
+[03] [  ] [  ] [  ] [  ] [  ]
+[04] [  ] [  ] [  ] [  ] [  ]
+[05] [  ] [  ] [  ] [  ] [  ]
+[06] [  ] [  ] [  ] [  ] [  ]
+[07] [  ] [  ] [  ] [  ] [  ]
+[08] [  ] [  ] [  ] [  ] [  ]
+[09] [  ] [  ] [  ] [  ] [  ]
+[10] [  ] [  ] [  ] [  ] [  ]
+
 
 ## Library Function Examples
 
