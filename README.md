@@ -53,6 +53,7 @@ Ch1-5 = Outgoing program change to send per midi channel (1-5 for five separate 
   Ch4 = Strymon Bigsky
   Ch5 = TwoNotes CAB
 
+```
 EEPROM Preset Data Arrays:
 Indx Ch1  Ch2  Ch3  Ch4  Ch5
 [00] [  ] [  ] [  ] [  ] [  ]
@@ -66,7 +67,7 @@ Indx Ch1  Ch2  Ch3  Ch4  Ch5
 [08] [  ] [  ] [  ] [  ] [  ]
 [09] [  ] [  ] [  ] [  ] [  ]
 [10] [  ] [  ] [  ] [  ] [  ]
-
+```
 
 ## Library Function Examples
 
