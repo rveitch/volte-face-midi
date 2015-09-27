@@ -4,7 +4,7 @@
 - [Arduino Midi Library](https://github.com/FortySevenEffects/arduino_midi_library)
 - [Midi Library Documentation](http://arduinomidilib.fortyseveneffects.com/index.html)
 
-# Initial Example:
+## Initial Example:
 
 ```c
 
