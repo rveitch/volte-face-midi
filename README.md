@@ -1,9 +1,8 @@
 # volte-face-midi-pc-event-remapper
 Volte-Face - Midi Program Change Event Remapper for Arduino Uno R3
 
-[Arduino Midi Library](https://github.com/FortySevenEffects/arduino_midi_library)
-
-[Midi Library Documentation](http://arduinomidilib.fortyseveneffects.com/index.html)
+- [Arduino Midi Library](https://github.com/FortySevenEffects/arduino_midi_library)
+- [Midi Library Documentation](http://arduinomidilib.fortyseveneffects.com/index.html)
 
 # Initial Example:
 
