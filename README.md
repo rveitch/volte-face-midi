@@ -4,6 +4,7 @@
 - [Arduino Midi Library](https://github.com/FortySevenEffects/arduino_midi_library)
 - [Midi Library Documentation](http://arduinomidilib.fortyseveneffects.com/index.html)
 - [Callbacks Documentation](http://playground.arduino.cc/Main/MIDILibraryCallbacks)
+- [EEPROM Read](https://www.arduino.cc/en/Tutorial/EEPROMRead)
 
 ## Initial Example:
 
