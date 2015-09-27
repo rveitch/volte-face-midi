@@ -12,6 +12,7 @@
 MIDI_CREATE_DEFAULT_INSTANCE();
 
 // ----------------------------------------------------------------------------------------------
+// Program Change Callback:
 // This function will be automatically called when a PC is received.
 // There is no need to check for incoming messages if they are bound to a Callback function.
 // This method will be called automatically when the corresponding message has been received.
