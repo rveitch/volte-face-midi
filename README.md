@@ -23,7 +23,7 @@ void handleProgramChange(byte channel, byte number)
 
 void setup()
 {
-  // Connect the "handleNoteOn" function to the library for program change callback reception.
+  // Connect the "handleProgramChange" function to the library for program change callback reception.
   MIDI.handleProgramChange(handleProgramChange);
   // Initiate MIDI communications, listen to all channels
   MIDI.begin(MIDI_CHANNEL_OMNI); 
