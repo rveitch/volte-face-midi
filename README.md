@@ -6,6 +6,9 @@
 - [Callbacks Documentation](http://playground.arduino.cc/Main/MIDILibraryCallbacks)
 - [EEPROM Read](https://www.arduino.cc/en/Tutorial/EEPROMRead)
 - [Saving int arrays to EEPROM](http://forum.arduino.cc/index.php?topic=258193.0)
+- [Midi Message Tables](http://www.midi.org/techspecs/midimessages.php)
+- [Midi Essentials](https://ccrma.stanford.edu/~craig/articles/linuxmidi/misc/essenmidi.html)
+- [Midi Programming](http://nauful.com/pages/midiprogramming.html)
 
 ## Initial Example:
 
@@ -72,6 +75,15 @@ Indx Ch1  Ch2  Ch3  Ch4  Ch5
 [08] [  ] [  ] [  ] [  ] [  ]
 [09] [  ] [  ] [  ] [  ] [  ]
 [10] [  ] [  ] [  ] [  ] [  ]
+```
+
+```
+int my2dArray[70][5] = // 70 rows * 5 columns
+{
+ {0x8888, 0x9999, 0xAAAA, 0xBBBB, 0xCCCC}, // 0
+ {0x8888, 0x9999, 0xAAAA, 0xBBBB, 0xCCCC}, // 1
+ {0x9999, 0xAAAA, 0xBBBB, 0xCCCC, 0xDDDD}  // etc.
+};
 ```
 
 ## Library Function Examples
