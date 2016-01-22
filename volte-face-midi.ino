@@ -8,6 +8,7 @@ void handleProgramChange(byte channel, byte number)
 {
   // Send Control Change (Bank Select, MSB)
   MIDI.sendControlChange(0, 0, 1); // Needed for Program Changes to work
+  MIDI.sendProgramChange(69, 1); // Change the voice (add+1pg for eventide)
 }
 // --------------------------------------------------------------------------------------------------
 
