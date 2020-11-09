@@ -25,4 +25,14 @@ function mapIncomingEvent(incomingProgramChange) {
   };
 }
 
+function mapIncomingEventInline(incomingProgramChange) {
+  const bank = Math.floor(incomingProgramChange / PRESETS_PER_BANK) + MIDI_OFFSET;
+  const present = (incomingProgramChange - (PRESETS_PER_BANK * (bank - MIDI_OFFSET))) + PRESET_MIN;
+  return {
+    pc: bank,
+    cc: present,
+    ccv: CONTROL_CHANGE_VALUE,
+  };
+}
+
 // mapIncomingEvent(24); // Uncomment to run example.
