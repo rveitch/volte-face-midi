@@ -119,3 +119,8 @@ setThruFilterMode();
 disconnectCallbackFromType();
      
 ```
+
+## Note:
+There was a bug with the MIDI library and `UseRunningStatus` that resulted in program changes needing to send a CC MSB for them to work.  The Midi library has now defaulted `UseRunningStatus` to false, so it may not be necessary to send CC MSB anymore following a program change. 
+
+https://github.com/FortySevenEffects/arduino_midi_library/issues/33
