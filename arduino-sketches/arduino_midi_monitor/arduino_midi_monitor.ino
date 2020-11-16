@@ -8,6 +8,13 @@ LiquidCrystal lcd(2, 3, 4, 5, 6, 7);
 MIDI_CREATE_DEFAULT_INSTANCE();
 
 void bootDisplay() {
+  //Home message
+  lcd.setCursor(0,0);
+  lcd.print(" Veitch Digital ");
+  lcd.setCursor(0,1);
+  lcd.print("  MIDI Devices  ");
+  delay (4000);
+  // Ready State
   lcd.setCursor(0, 0);
   lcd.print(" AWAITING  MIDI ");
   lcd.setCursor(0, 1);
